@@ -1,6 +1,6 @@
 # Universal React Example
 
-An example of a universal app built with React.
+Render HTML using React server side.
 
 ### Install
 
