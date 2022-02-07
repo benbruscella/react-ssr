@@ -1,4 +1,4 @@
-# Universal React Example
+# SSR HTML
 
 Render HTML using React server side.
 
