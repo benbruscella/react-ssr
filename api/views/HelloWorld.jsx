@@ -1,6 +1,6 @@
 var React = require('react');
 
-module.exports = (props) => {
+const HelloWorld = (props) => {
     console.log({ props });
     return (
         <div>
@@ -9,3 +9,5 @@ module.exports = (props) => {
         </div>
     );
 };
+
+module.exports = HelloWorld;

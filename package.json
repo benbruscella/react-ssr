@@ -4,7 +4,7 @@
   "description": "An example of a universal app built with React. https://medium.com/@agavitalis/setting-up-a-nodejs-express-application-with-babel-642fe0dd45a5",
   "author": "Mark <mark@remarkablemark.org>",
   "scripts": {
-    "start": "node server.js"
+    "start": "node api/server.js"
   },
   "main": "server.js",
   "keywords": [
