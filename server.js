@@ -1,5 +1,5 @@
-require('babel-register')({
-    presets: ['react']
+require("@babel/register")({
+    presets: ['@babel/react']
 });
 
 var express = require('express');
@@ -9,9 +9,10 @@ var ReactDOMServer = require('react-dom/server');
 var Component = require('./Component.jsx');
 
 app.get('/', function(request, response) {
-    var html = ReactDOMServer.renderToString(
-        React.createElement(Component)
-    );
+    const props = { server: true };
+    const element = React.createElement(Component, props)
+    const html = ReactDOMServer.renderToStaticMarkup(element);
+    console.log({ html });
     response.send(html);
 });
 
